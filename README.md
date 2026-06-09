@@ -45,5 +45,6 @@ The scanner recognizes the following reserved keywords:
 
 ## Core Components
 - **`Lox.java`**: Main entry point handling CLI logic, read-file operations, the interactive REPL, and top-level error reporting without crashing the runtime.
+- **`Scanner.java`**: Responsible for the main lexical analysis (scanning). Reads the raw source string character by character, recognizes keywords, handles whitespace/comments (line comments `//`), and groups characters into a list of `Token` instances.
 - **`Token.java`**: Represents a lexical token, storing its type, exact string (lexeme), literal runtime value, and source line number.
 - **`TokenType.java`**: The enumeration characterizing all currently valid syntax tokens.
